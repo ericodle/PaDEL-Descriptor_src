@@ -34,7 +34,6 @@ iedb_sample/
 
 # Generated analysis files
 results/analysis_plots/
-analysis_output/
 
 # Temporary files
 *.tmp
