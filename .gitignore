@@ -1,0 +1,39 @@
+# Build directories
+build/
+**/build/
+**/dist/
+
+# Compiled Java classes
+*.class
+
+# IDE files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Results and output files
+results/
+data/
+iedb_sample/
+
+# Temporary files
+*.tmp
+*.temp
+
+# JAR files (keep original lib/ but ignore generated ones)
+# lib/*.jar
+
+# Backup files
+*~
+*.bak
