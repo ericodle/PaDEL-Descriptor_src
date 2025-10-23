@@ -40,6 +40,20 @@ javac -cp "lib/*:libPaDEL/build/classes:libPaDEL-Jobs/build/classes" -d libPaDEL
 javac -cp "lib/*:libPaDEL/build/classes:libPaDEL-Jobs/build/classes:libPaDEL-Descriptor/build/classes" -d PaDEL-Descriptor/build/classes PaDEL-Descriptor/src/*.java
 ```
 
+3. Set up Python environment for data analysis (optional):
+```bash
+# Create virtual environment
+python3 -m venv env
+
+# Activate virtual environment
+source env/bin/activate  # On Linux/Mac
+# or
+env\Scripts\activate     # On Windows
+
+# Install Python dependencies
+pip install -r requirements.txt
+```
+
 ### Usage
 
 #### Process Multiple SDF Files
@@ -65,6 +79,23 @@ javac -cp "lib/*:libPaDEL/build/classes:libPaDEL-Jobs/build/classes:libPaDEL-Des
 # Launch the graphical interface
 ./run_padel.sh
 ```
+
+#### Data Description and Visualization
+
+```bash
+# Activate Python environment
+source env/bin/activate
+
+# Run data description and visualization
+python data_analysis.py
+```
+
+This will generate:
+- Statistical summaries of your molecular descriptors
+- Distribution plots and correlation heatmaps
+- PCA and t-SNE visualizations for data exploration
+- Class-specific statistics and comparisons
+- Publication-ready figures for data description
 
 ## Command-line Options
 
